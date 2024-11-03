@@ -1,0 +1,9 @@
+package proxy_design_pattern.proxy;
+
+public class DbConnectionUtils {
+	
+	public void ConnectToDB() {
+		System.out.println("connecting to DB");
+	}
+
+}

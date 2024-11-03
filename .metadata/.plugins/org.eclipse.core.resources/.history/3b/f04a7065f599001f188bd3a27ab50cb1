@@ -1,0 +1,22 @@
+package proxy_design_pattern.proxy;
+
+public class ITemployee  implements Iemployee{
+
+	private double salary;
+	
+	@Override
+	public void giveHike(double amount) {
+		// 
+		salary=salary+amount;
+	}
+
+	@Override
+	public void payCut(double amount) {
+		// TODO Auto-generated method stub
+		salary=salary-=amount;
+	}
+	
+	
+	
+
+}

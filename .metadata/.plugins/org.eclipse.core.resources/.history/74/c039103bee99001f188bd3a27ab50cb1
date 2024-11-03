@@ -1,0 +1,14 @@
+package proxy_design_pattern.proxy;
+
+public class Student implements DailySession
+{
+
+	
+	
+	@Override
+	public void attendSession() {
+		// TODO Auto-generated method stub
+	
+		System.out.println("attending the session")
+	}
+}

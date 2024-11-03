@@ -1,0 +1,9 @@
+package proxy_design_pattern.proxy;
+
+public class Attendance {
+	
+	private Date date;
+	
+	private Boolean isPresent;
+
+}

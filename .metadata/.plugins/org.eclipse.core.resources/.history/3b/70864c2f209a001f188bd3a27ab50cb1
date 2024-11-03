@@ -1,0 +1,25 @@
+package proxy_design_pattern.jdkproxy;
+
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+
+public class ProductDAOImplProxy implements InvocationHandler{
+
+	ProductDAOImpl productDAOImplTarget;
+	
+	public ProductDAOImplProxy(ProductDAOImpl productDAOImplTarget) {
+		this.productDAOImplTarget=productDAOImplTarget;
+	}
+	
+	
+	@Override
+	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+		// TODO Auto-generated method stub
+	
+		
+		
+		
+		return null;
+	}
+
+}

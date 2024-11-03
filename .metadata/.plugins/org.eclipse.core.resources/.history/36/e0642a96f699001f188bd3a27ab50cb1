@@ -1,0 +1,21 @@
+package proxy_design_pattern.proxy;
+
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+
+public class EmployeeSalaryInvocationHandler implements InvocationHandler{
+
+	@Override
+	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+		// TODO Auto-generated method stub
+
+		
+		//pre processing 
+		
+		//making actuall call to my service layer
+		
+		//post processing
+	}
+	
+
+}

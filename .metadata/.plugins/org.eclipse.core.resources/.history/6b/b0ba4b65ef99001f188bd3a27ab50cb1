@@ -1,0 +1,28 @@
+package proxy_design_pattern.proxy;
+
+import javax.management.RuntimeErrorException;
+
+public class StudentProxy extends Student {
+
+	public StudentProxy(Attendance attendance) {
+		super(attendance);
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	@Override
+	@Override
+	public void attendSession() {
+		// TODO Auto-generated method stub
+	
+		
+		if(super.getAttendance().getIsPresent()) {
+			super.attendSession();
+		}else {
+			throw new RuntimeErrorException("student is not present can't attend the session ");
+		}
+		
+		
+	}
+
+}

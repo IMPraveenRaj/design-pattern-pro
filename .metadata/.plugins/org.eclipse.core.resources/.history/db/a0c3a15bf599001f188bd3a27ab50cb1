@@ -1,0 +1,20 @@
+package proxy_design_pattern.proxy;
+
+public class ITemployee  implements Iemployee{
+
+	@Override
+	public void giveHike(double amount) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void payCut(double amount) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+
+}

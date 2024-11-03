@@ -1,0 +1,19 @@
+package proxy_design_pattern.jdkproxy;
+
+import java.lang.reflect.Proxy;
+
+public class App {
+
+	
+	
+	public static void main(String args[]) {
+		
+		/*
+		 * ProductDAO productDAO= new ProductDAOImpl(); productDAO.getProductById(1);
+		 * productDAO.saveProduct(new Product());
+		 */
+	
+		ProductDAO 
+		Proxy.newProxyInstance(null, ProductDAO.class, null)
+	}
+}

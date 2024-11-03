@@ -1,0 +1,37 @@
+package proxy_design_pattern.proxy;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+
+public class Test {
+
+	
+	
+	public static void main(String[] args) throws ClassNotFoundException {
+		
+	
+		Class<?> studentInfo = Class.forName("proxy_design_pattern.proxy.Student");
+		Constructor<?>[] constructors = studentInfo.getConstructors();
+		
+		
+		for(Constructor constructor : constructors) {
+			System.out.println(constructor);
+		}
+		
+		
+		/*
+		 * Method[] declaredMethods = studentInfo.getDeclaredMethods(); for(Method
+		 * method : declaredMethods) { System.out.println(method); }
+		 */
+		
+        var info=Student.class;
+        Method[] declaredMethods2 = info.getDeclaredMethod("attendSession()",null);
+       
+        
+        for(Method method : declaredMethods2) {
+			System.out.println(method);
+			method.invoke(declaredMethods2, args)
+		
+		}
+	}
+}

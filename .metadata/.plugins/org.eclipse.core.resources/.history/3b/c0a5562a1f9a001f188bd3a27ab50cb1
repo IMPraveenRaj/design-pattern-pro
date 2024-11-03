@@ -1,0 +1,5 @@
+package proxy_design_pattern.jdkproxy;
+
+public class ProductDAOImplProxy {
+
+}

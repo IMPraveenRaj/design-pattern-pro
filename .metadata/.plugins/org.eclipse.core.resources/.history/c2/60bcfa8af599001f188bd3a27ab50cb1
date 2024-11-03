@@ -1,0 +1,10 @@
+package proxy_design_pattern.proxy;
+
+public interface Iemployee {
+	
+	public void giveHike(double amount);
+	public void payCut(double amount);
+	
+	public int getId();
+
+}

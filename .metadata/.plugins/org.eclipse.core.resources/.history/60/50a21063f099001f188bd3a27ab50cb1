@@ -1,0 +1,14 @@
+package proxy_design_pattern.proxy;
+
+public class Test {
+
+	
+	
+	public static void main(String[] args) {
+		
+	
+		Class.forName("proxy_design_pattern.proxy.Student")
+		
+		
+	}
+}

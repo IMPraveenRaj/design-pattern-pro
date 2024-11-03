@@ -1,0 +1,17 @@
+package proxy_design_pattern.proxy;
+
+public class ProductDAOImpl implements ProductDAO {
+
+	@Override
+	public Product getProductById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void saveProduct(Product product) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

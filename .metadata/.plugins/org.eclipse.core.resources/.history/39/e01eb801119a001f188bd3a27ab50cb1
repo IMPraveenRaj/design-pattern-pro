@@ -1,0 +1,12 @@
+package proxy_design_pattern.proxy;
+
+public class Client {
+
+	
+	
+	public static void main(String[] args) {
+		ITemployee itemployee= new ITemployee();
+		itemployee.setId(101);
+		itemployee.setName("praveenraj");
+	}
+}

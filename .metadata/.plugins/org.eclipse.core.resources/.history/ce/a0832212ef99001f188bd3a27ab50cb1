@@ -1,0 +1,26 @@
+package proxy_design_pattern.proxy;
+
+public class StudentProxy extends Student {
+
+	public StudentProxy(Attendance attendance) {
+		super(attendance);
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	@Override
+	@Override
+	public void attendSession() {
+		// TODO Auto-generated method stub
+	
+		
+		if(super.getAttendance()) {
+			super.attendSession();
+		}else {
+			
+		}
+		
+		
+	}
+
+}
