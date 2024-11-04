@@ -13,6 +13,8 @@ public class App {
 
 		
 		//but the only disadvantage is JDk Dynamic proxy only work with interfaces
+		//you can specify more interface but not the classes
+		//self invocation is not possible  for example we are calling the productById inside the saveMethod()
 		ProductDAO productDao = (ProductDAO) Proxy.newProxyInstance(ProductDAO.class.getClassLoader(),
 				new Class[] { ProductDAO.class }, new ProductDAOInvocationHandler(new ProductDAOImpl()));
 		
