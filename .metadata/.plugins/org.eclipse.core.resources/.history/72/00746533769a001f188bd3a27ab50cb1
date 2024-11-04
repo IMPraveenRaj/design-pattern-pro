@@ -12,7 +12,7 @@ public class App {
 		 */
 
 		
-		//but the only disadvantage is JDk Dynamic proxy only work with interfaces
+		//but the only disavantage is JDk Dynamic proxy only work with interfaces
 		ProductDAO productDao = (ProductDAO) Proxy.newProxyInstance(ProductDAO.class.getClassLoader(),
 				new Class[] { ProductDAO.class }, new ProductDAOInvocationHandler(new ProductDAOImpl()));
 		
